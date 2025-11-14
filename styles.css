@@ -1,0 +1,225 @@
+:root {
+  --preto: #0d0d0d;
+  --dourado: #caa74d;
+  --branco: #fdfdfd;
+  --cinza: #dcdcdc;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+  background-color: var(--branco);
+  color: var(--preto);
+  margin: 0;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Header */
+.header {
+  background-color: var(--preto);
+  border-bottom: 2px solid var(--dourado);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--dourado);
+}
+
+.logo span {
+  color: var(--branco);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nav a {
+  color: var(--branco);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  color: var(--dourado);
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+  url(images/building-4803602_1280.jpg);
+  color: var(--branco);
+  text-align: center;
+  padding: 10rem 2rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.btn-primario {
+  background-color: var(--dourado);
+  color: var(--preto);
+  border: none;
+  padding: 0.8rem 1.6rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-primario:hover {
+  background-color: #b38f39;
+}
+
+.btn-secundario {
+  background: var(--preto);
+  color: var(--dourado);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: 1px solid var(--dourado);
+  cursor: pointer;
+}
+
+/* Seções */
+section {
+  padding: 4rem 0;
+}
+
+h2 {
+  text-align: center;
+  color: var(--dourado);
+  margin-bottom: 2rem;
+}
+
+/* Cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: var(--branco);
+  border: 1px solid var(--cinza);
+  border-left: 4px solid var(--dourado);
+  padding: 1.5rem;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Equipe */
+.membros {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.membro {
+  text-align: center;
+  max-width: 250px;
+}
+
+.membro img {
+  border-radius: 50%;
+  border: 3px solid var(--dourado);
+}
+
+/* Postagens */
+.feed {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.post {
+  background: #fff;
+  border: 1px solid var(--cinza);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.post:hover {
+  transform: translateY(-3px);
+}
+
+.post img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.post-content {
+  padding: 1rem;
+}
+
+.post-content h4 {
+  color: var(--dourado);
+  margin: 0 0 0.5rem;
+}
+
+/* Painel admin */
+.hidden {
+  display: none;
+}
+
+.admin-panel {
+  margin-top: 3rem;
+  border-top: 1px solid var(--cinza);
+  padding-top: 2rem;
+}
+
+.admin-panel input,
+.admin-panel textarea {
+  width: 100%;
+  max-width: 600px;
+  margin: 0.5rem 0;
+  padding: 0.8rem;
+  border-radius: 6px;
+  border: 1px solid var(--cinza);
+}
+
+.login-admin {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Mapa */
+.map-container {
+  margin-top: 2rem;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Rodapé */
+.footer {
+  background-color: var(--preto);
+  color: var(--branco);
+  text-align: center;
+  padding: 1rem 0;
+  border-top: 2px solid var(--dourado);
+}
